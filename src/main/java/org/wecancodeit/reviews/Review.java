@@ -4,7 +4,8 @@ public class Review {
 
 	private long reviewId;
 
-	public Review(long reviewId, String string, String string2) {
+	public Review(long reviewId, String reviewTitle, String reviewCategory, String Content, String imageUrl,
+			int rating) {
 		this.reviewId = reviewId;
 	}
 

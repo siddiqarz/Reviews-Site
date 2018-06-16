@@ -14,8 +14,9 @@ public class ReviewsRepositoryTest {
 	private long reviewId = 1L;
 	private long secondReviewId = 2L;
 
-	private Review review = new Review(reviewId, "reviewTitle", "reviewCategory");
-	private Review secondReview = new Review(secondReviewId, "reviewTitle", "reviewCategory");
+	private Review review = new Review(reviewId, "reviewTitle", "reviewCategory", "content", "", 4);
+	private Review secondReview = new Review(secondReviewId, "reviewTitle", "reviewCategory", "content", "", 4);
+	
 
 	@Test
 	public void shouldFindAReview() {
