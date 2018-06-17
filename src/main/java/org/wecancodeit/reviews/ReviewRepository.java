@@ -14,16 +14,16 @@ public class ReviewRepository {
 	public ReviewRepository() {
 		Review dubai = new Review(1L, "Dubai", "Asia",
 				"Amazing city, bursting with life, super expensive but with multitudes of things to do.",
-				"images/dubai.jpg", 5);
+				"/images/dubai.jpg", "5");
 		Review sydney = new Review(2L, "Sydney", "Australia",
 				"Australia's newly renovated landmark, the Sydney Opera House, showcasing new machinery, lighting and improved acoustics, makes Sydney an amazing spot.",
-				"images/sydney.jpg", 4);
+				"/images/sydney.jpg", "4");
 		Review newOrleans = new Review(3L, "New Orleans", "North America",
 				"With its colorful demeanor and non-stop energy, the Big Easy doesn’t appear a day over 200.",
-				"images/New Orleans.jpg", 4);
+				"/images/New Orleans.jpg", "4");
 		Review sanya = new Review(3L, "Sanya", "Asia",
 				"The Hawaii of China. Sunny, tranquil stretch of South China Sea. A haven for beach lovers and foodies",
-				"images/Sanya.jpg", 5);
+				"/images/Sanya.jpg", "5");
 		
 		reviewList.put(dubai.getId(), dubai);
 		reviewList.put(sydney.getId(), sydney);

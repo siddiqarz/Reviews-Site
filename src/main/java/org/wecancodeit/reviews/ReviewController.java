@@ -24,4 +24,5 @@ public class ReviewController {
 		model.addAttribute("reviews", reviewRepo.findOne(id));
 		return "review";
 	}
+	 
 }

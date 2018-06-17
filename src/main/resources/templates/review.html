@@ -5,5 +5,18 @@
 </head>
 <body>
 	<h1>Most Voted Review</h1>
+
+	<div th:each ="review: ${reviews}">
+		<img id = "imageurl" th:src= "${review.imageUrl}"/><br/>
+		 
+		<em><p th:text = "${review.content}"></p></em>
+		<p> <strong>Category:</strong> 
+			<span th:text ="${review.category}"></span></p>
+		<p><strong>Rating:</strong> 
+			<span th:text = "${review.rating}"></span></p>
+		<footer>
+		<a href="http://localhost:8080/show-reviews">Homepage</a>
+		</footer>
+	</div>
 </body>
 </html>
