@@ -24,13 +24,14 @@ public class ReviewRepository {
 		Review sanya = new Review(3L, "Sanya", "Asia",
 				"The Hawaii of China. Sunny, tranquil stretch of South China Sea. A haven for beach lovers and foodies",
 				"/images/Sanya.jpg", "5");
+		Review paris = new Review(4L, "Paris", "Europe", "An abundance of museums, amazing cafes, stellar shopping experince, the city for lovers of art and history", "/images/paris.jpg", "4.5");
 		
 		reviewList.put(dubai.getId(), dubai);
 		reviewList.put(sydney.getId(), sydney);
 		reviewList.put(newOrleans.getId(), newOrleans);
 		reviewList.put(sanya.getId(), sanya);
+		reviewList.put(paris.getId(), paris);
 	}
-
 
 	public Review findOne(long reviewId) {
 		return reviewList.get(reviewId);
@@ -40,11 +41,11 @@ public class ReviewRepository {
 		return reviewList.values();
 	}
 
-	//Constructor for testing
+	// Constructor for testing
 	public ReviewRepository(Review... reviews) {
 		for (Review review : reviews) {
 			reviewList.put(review.getId(), review);
 		}
-		
+
 	}
 }
