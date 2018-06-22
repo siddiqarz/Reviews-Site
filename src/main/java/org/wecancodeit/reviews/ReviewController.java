@@ -18,7 +18,7 @@ public class ReviewController {
 		//(attribute name(model name), and attributeValue(everything going to show on template)
 		return "reviews";
 	}
-	
+	 
 	@RequestMapping("/review")
 	public String findOneReview(@RequestParam(value="id") Long id, Model model) {
 		model.addAttribute("reviews", reviewRepo.findOne(id));

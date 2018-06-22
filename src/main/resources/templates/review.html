@@ -7,7 +7,8 @@
 	<h1>Most Voted Review</h1>
 
 	<div th:each ="review: ${reviews}">
-		<img id = "imageurl" th:src= "${review.imageUrl}"/><br/>
+		<strong><p th:text= "${review.title}"></p></strong>
+		<img id = "imageUrl" th:src= "${review.imageUrl}"/><br/>
 		 
 		<em><p th:text = "${review.content}"></p></em>
 		<p> <strong>Category:</strong> 
